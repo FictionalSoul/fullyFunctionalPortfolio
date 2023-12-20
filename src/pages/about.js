@@ -58,17 +58,17 @@ Me, As a front-end virtuoso, crafts seamless interfaces through mastery in HTML,
                             {/* 75 is the opacity i.e 0.75 */}
                             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                             <p className='font-medium '>
-                                Hi, I'm Vivek, a web developer and UI/UX designer with a passion for creating beautiful, functional,
+                                Hi, I am Vivek, a web developer and UI/UX designer with a passion for creating beautiful, functional,
                                 and user-centered digital experiences.
                             </p>
 
                             <p className='font-medium my-4 ' >
-                                I believe that design is about more than just making things look pretty – it's about solving problems and
+                                I believe that design is about more than just making things look pretty – it is about solving problems and
                                 creating intuitive, enjoyable experiences for users.
                             </p>
 
                             <p className='font-medium '>
-                                Whether I'm working on a website, mobile app, or
+                                Whether I am working on a website, mobile app, or
                                 other digital product, I bring my commitment to design excellence and user-centered thinking to
                                 every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
                             </p>
