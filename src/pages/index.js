@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Head from 'next/head'
 import Image from 'next/image'
-import ProfilePic from "../../public/images/profile/developer-pic-1.png"
+import ProfilePic from "../../public/images/profile/IMG_20210801_182416_Bokeh.png"
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/icons";
@@ -20,14 +20,23 @@ export default function Home() {
       </Head>
       <TransitionEffect></TransitionEffect>
 
-      <main className='flex items-center text-dark w-full min-h-screen dark:text-light '> 
+      <main className='flex items-center text-dark w-full min-h-screen dark:text-light'  > 
         <Layout className="pt-0 md:pt-16 sm:pt-8">
            <div className='flex items-center justify-between w-full lg:flex-col'>
             <div className="w-1/2 md:w-full">
             {/* 1.priority-> is a next js feature that'll set that element in high priority
             i.e that attribute will load first then other elements which will optimize our google ratings 
             2. sizes-> feature which is similar to media query i.e varies with size or responsive */}
-              <Image src={ProfilePic} alt="Developers Image" className="w-full h-auto lg:hidden md:inline-block md:w-full"
+            <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark  p-8 mt-10
+                 dark:border-light  xl:col-span-4 md:order-1 md:col-span-8 w-[70%] ml-10 lg:hidden dark:bg-ImgDark bg-ImgLight' >
+            <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark
+                             dark:bg-light  lg:hidden' />
+              <Image src={ProfilePic} alt="Developers Image" className=" w-[100%] h-auto lg:hidden md:inline-block md:w-full"
+                 style={{
+                  background: "linear-Gradient(45deg, black, transparent)",
+                  borderRadius: "171px",
+                  opacity: 0.8,
+                 }}
                 priority
                 sizes="
                 (max-width:768px) 100vw, 
@@ -35,15 +44,16 @@ export default function Home() {
                 50vw
                 "
               />
+              </div>
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center ">
-              <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl !text-left
+              <AnimatedText text="Seeking Opportunities | Aspiring Software Developer" className="!text-6xl !text-left
               xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:text-3xl "
                 
               />
               {/* ! means important in tailwind */}
-              <p className="my-4 text-base font-medium md:text-sm sm:text-sm "> As a skilled front-stack developer, I am dedicated to turning ideas into innovative web applications. 
-                Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
+              <p className="my-4 text-base font-medium md:text-sm sm:text-sm "> Mastering HTML, CSS, Bootstrap, React.js, and Next.js to craft dynamic and visually stunning web experiences,
+               enhanced with Tailwind and React-Framer for a touch of innovation.</p>
 
                 <div className="flex items-center self-start mt-2 lg:self-center ">
                   <Link href="/Web_Vivek_Resume.pdf" target="_blank" // to href to work our resume should be in public folder
